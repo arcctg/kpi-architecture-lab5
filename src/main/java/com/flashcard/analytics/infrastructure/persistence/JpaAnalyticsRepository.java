@@ -8,3 +8,4 @@ public interface JpaAnalyticsRepository extends JpaRepository<UserActivitySummar
 
     Optional<UserActivitySummaryEntity> findByUserId(Long userId);
 }
+
