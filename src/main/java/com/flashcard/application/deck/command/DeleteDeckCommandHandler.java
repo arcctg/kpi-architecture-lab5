@@ -3,7 +3,7 @@ package com.flashcard.application.deck.command;
 import com.flashcard.application.port.EventPublisher;
 import com.flashcard.domain.error.AccessDeniedError;
 import com.flashcard.domain.error.EntityNotFoundError;
-import com.flashcard.domain.event.DeckDeleted;
+import com.flashcard.shared.event.DeckDeleted;
 import com.flashcard.domain.model.Deck;
 import com.flashcard.domain.model.User;
 import com.flashcard.domain.repository.DeckRepository;

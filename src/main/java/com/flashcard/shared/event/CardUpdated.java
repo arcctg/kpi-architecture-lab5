@@ -1,12 +1,12 @@
-package com.flashcard.domain.event;
+package com.flashcard.shared.event;
 
 import java.time.LocalDateTime;
 
-public record CardAdded(
+public record CardUpdated(
         Long cardId,
         Long deckId,
-        String term,
-        String definition,
+        String newTerm,
+        String newDefinition,
         Long ownerId,
         LocalDateTime occurredAt
 ) {}

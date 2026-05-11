@@ -2,7 +2,7 @@ package com.flashcard.application.deck.command;
 
 import com.flashcard.application.port.EventPublisher;
 import com.flashcard.domain.error.EntityNotFoundError;
-import com.flashcard.domain.event.DeckCreated;
+import com.flashcard.shared.event.DeckCreated;
 import com.flashcard.domain.factory.DeckFactory;
 import com.flashcard.domain.model.Deck;
 import com.flashcard.domain.model.User;

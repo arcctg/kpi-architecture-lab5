@@ -5,7 +5,7 @@ import com.flashcard.application.port.EventPublisher;
 import com.flashcard.application.port.PasswordEncoder;
 import com.flashcard.application.port.TokenProvider;
 import com.flashcard.domain.error.DuplicateError;
-import com.flashcard.domain.event.UserRegistered;
+import com.flashcard.shared.event.UserRegistered;
 import com.flashcard.domain.model.User;
 import com.flashcard.domain.repository.UserRepository;
 import com.flashcard.domain.valueobject.Email;

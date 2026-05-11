@@ -3,7 +3,7 @@ package com.flashcard.application.card.command;
 import com.flashcard.application.port.EventPublisher;
 import com.flashcard.domain.error.AccessDeniedError;
 import com.flashcard.domain.error.EntityNotFoundError;
-import com.flashcard.domain.event.CardAdded;
+import com.flashcard.shared.event.CardAdded;
 import com.flashcard.domain.factory.CardFactory;
 import com.flashcard.domain.model.Card;
 import com.flashcard.domain.model.Deck;

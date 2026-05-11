@@ -1,4 +1,4 @@
-package com.flashcard.domain.event;
+package com.flashcard.shared.event;
 
 import java.time.LocalDateTime;
 

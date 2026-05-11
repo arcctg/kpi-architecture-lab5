@@ -1,6 +1,6 @@
 package com.flashcard.activitylog;
 
-import com.flashcard.domain.event.*;
+import com.flashcard.shared.event.*;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 import java.time.LocalDateTime;
