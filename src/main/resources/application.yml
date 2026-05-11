@@ -1,6 +1,6 @@
 spring:
   datasource:
-    url: jdbc:postgresql://localhost:5432/flashcard
+    url: jdbc:postgresql://localhost:5436/flashcard
     username: flashcard
     password: flashcard
   jpa:
