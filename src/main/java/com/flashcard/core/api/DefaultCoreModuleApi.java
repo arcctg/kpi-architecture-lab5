@@ -1,8 +1,11 @@
 package com.flashcard.core.api;
 
+import com.flashcard.core.domain.error.EntityNotFoundError;
 import com.flashcard.core.domain.model.Deck;
 import com.flashcard.core.domain.repository.CardRepository;
 import com.flashcard.core.domain.repository.DeckRepository;
+import com.flashcard.core.domain.repository.UserRepository;
+import com.flashcard.core.domain.valueobject.Email;
 import org.springframework.stereotype.Service;
 
 import java.util.Optional;
@@ -12,10 +15,21 @@ public class DefaultCoreModuleApi implements CoreModuleApi {
 
     private final DeckRepository deckRepository;
     private final CardRepository cardRepository;
+    private final UserRepository userRepository;
 
-    public DefaultCoreModuleApi(DeckRepository deckRepository, CardRepository cardRepository) {
+    public DefaultCoreModuleApi(DeckRepository deckRepository,
+                                CardRepository cardRepository,
+                                UserRepository userRepository) {
         this.deckRepository = deckRepository;
         this.cardRepository = cardRepository;
+        this.userRepository = userRepository;
+    }
+
+    @Override
+    public Long resolveUserId(String email) {
+        return userRepository.findByEmail(new Email(email))
+                .orElseThrow(() -> new EntityNotFoundError("User not found"))
+                .getId();
     }
 
     @Override

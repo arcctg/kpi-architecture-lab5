@@ -9,4 +9,6 @@ public interface CoreModuleApi {
     long countDecksByOwner(Long ownerId);
 
     long countCardsByDeck(Long deckId);
+
+    Long resolveUserId(String email);
 }
